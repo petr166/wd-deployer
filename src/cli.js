@@ -39,8 +39,8 @@ const cli = args => {
   console.log('\n' + name);
   console.log('=====================>');
 
-  if (method === 'pm2') {
-    methods.pm2.run(options);
+  if (method === 'upload') {
+    methods.upload.run(options);
   }
 };
 

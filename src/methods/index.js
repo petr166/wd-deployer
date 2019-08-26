@@ -1,5 +1,5 @@
-const pm2 = require('./pm2');
+const upload = require('./upload');
 
 module.exports = {
-  pm2,
+  upload,
 };
