@@ -1,0 +1,23 @@
+{
+  "name": "@petr166/wd-deployer",
+  "version": "1.0.0",
+  "description": "App deploy CLI",
+  "main": "index.js",
+  "bin": {
+    "@petr166/wd-deployer": "bin/wd-deployer",
+    "wd-deployer": "bin/wd-deployer"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Petru Birzu",
+  "license": "ISC",
+  "dependencies": {
+    "arg": "^4.1.1",
+    "node-ssh": "^6.0.0"
+  }
+}
