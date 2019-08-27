@@ -15,6 +15,9 @@ const parseArgs = rawArgs => {
       '--destination': String,
       '--local-path': String,
       '--name': String,
+      '--npm-i': Boolean,
+      '--git-user': String,
+      '--git-password': String,
     },
     { argv: rawArgs.slice(2) }
   );
@@ -30,6 +33,9 @@ const parseArgs = rawArgs => {
     destination: args['--destination'],
     localPath: args['--local-path'],
     name: args['--name'],
+    npmInstall: args['--npm-i'],
+    gitUser: args['--git-user'],
+    gitPassword: args['--git-password'],
   };
 };
 
@@ -41,6 +47,8 @@ const cli = args => {
 
   if (method === 'upload') {
     methods.upload.run(options);
+  } else if (method === 'pm2') {
+    methods.pm2.run(options);
   }
 };
 
