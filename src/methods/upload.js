@@ -2,7 +2,7 @@ const node_ssh = require('node-ssh');
 
 const { checkProps } = require('../utils');
 
-const run = async options => {
+const run = async (options) => {
   checkProps(options, ['host', 'user', 'password', 'cwd', 'localPath']);
 
   const { host, user, password, cwd, destination, localPath } = options;
